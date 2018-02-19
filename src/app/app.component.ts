@@ -1,3 +1,4 @@
+import { AppService } from './common/app.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(
+    public appService: AppService
+  ) {}
 }
